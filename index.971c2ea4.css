@@ -1,0 +1,49 @@
+@keyframes rotate-watch-hands {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.watch {
+  border: 2px dotted #000;
+  border-radius: 50%;
+  width: 80vmin;
+  height: 80vmin;
+  margin: 10vmin auto;
+  position: relative;
+}
+
+.watch__hand {
+  transform-origin: bottom;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+}
+
+.watch__hand--hour {
+  background-color: green;
+  width: 2%;
+  height: 30%;
+  animation: 60s linear infinite rotate-watch-hands;
+}
+
+.watch__hand--minute {
+  background-color: #00f;
+  width: 2%;
+  height: 45%;
+  animation: 5s linear infinite rotate-watch-hands;
+}
+
+.watch__hand--center {
+  background-color: #ff0;
+  border-radius: 33px;
+  width: 30px;
+  height: 30px;
+  margin: -11px;
+}
+
+/*# sourceMappingURL=index.971c2ea4.css.map */
